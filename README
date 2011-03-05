@@ -1,1 +1,13 @@
-Test Commit 3 from Windows
+Backup Script v1.0
+
+Script made by Chris Engstrom
+    Purpose: Create a backup of each of our databases individually and
+             save them to the server via a cron job to be downloaded at
+             a later date.
+
+    Updates needed for v2.0
+        Install the libssh2 library on the server and implement the sftp
+        for this script.
+
+    Crontab entry for later reference:
+        0 4 * * * nice -n 15 /usr/local/bin/php /usr/www/users/USER/PATH_TO_FILE/database_backup-tempsol.php
